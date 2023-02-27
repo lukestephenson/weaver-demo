@@ -25,7 +25,7 @@ abstract class KafkaSpecHelper extends AnyFunSpec with Matchers with BeforeAndAf
     kafkaContainer.start()
 
     val brokerUrl = kafkaContainer.bootstrapServers
-    println(brokerUrl)
+    println(s"kafka started on $brokerUrl")
     adminClient = AdminClient.create(Collections.singletonMap(BOOTSTRAP_SERVERS_CONFIG, brokerUrl))
   }
 

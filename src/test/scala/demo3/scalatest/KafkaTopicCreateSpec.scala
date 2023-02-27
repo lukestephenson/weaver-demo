@@ -27,7 +27,7 @@ class KafkaTopicCreateSpec extends AnyFunSpec with Matchers with BeforeAndAfterA
     kafkaContainer.start()
 
     val brokerUrl = kafkaContainer.bootstrapServers
-    println(brokerUrl)
+    println(s"kafka started on $brokerUrl")
     adminClient = AdminClient.create(Collections.singletonMap(BOOTSTRAP_SERVERS_CONFIG, brokerUrl))
   }
 

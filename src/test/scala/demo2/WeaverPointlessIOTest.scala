@@ -8,7 +8,7 @@ import scala.util.Success
 object WeaverPointlessIOTest extends FunSuite {
 
 //  test("weaver - example 1") {
-//    expect(PointlessIO.add(1, 2) == 3)
+//      expect(PointlessIO.add(1, 2) == 3)
 //  }
 
 }

@@ -9,7 +9,7 @@ import scala.util.Success
 class ListUtilsTest extends AnyFunSpec with Matchers {
   describe("Scalatest - ListUtils") {
     it("using matchers - reverse always has the same number of elements") {
-      (ListUtils.reverse(List(1, 2, 3)) should have).length(3)
+      ListUtils.reverse(List(1, 2, 3)) should be("3")
     }
 
     it("using assert - reverse always has the same number of elements") {
